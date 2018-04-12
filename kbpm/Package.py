@@ -19,6 +19,8 @@ class Package():
         self.url = attributes["url"]
         if "projectURL" in attributes:
             self.projectURL = attributes["projectURL"]
+            if self.name == "BEAST":
+                self.projectURL = "https://github.com/CompEvol/beast2"
         self.description = attributes["description"]
 
     def printInfo(self):
