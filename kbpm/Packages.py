@@ -32,7 +32,11 @@ class Packages:
     def print_packages_info(self):
         for key, value in self.latest_version_packages.items():
             self.latest_version_packages[key].print_info()
-        print("\nLoad total ", len(self.latest_version_packages), " unique packages.")
+        print("\nLoad total ", len(self.latest_version_packages), " unique packages.\n")
+
+    def update_projects(self):
+        for key, value in self.latest_version_packages.items():
+            self.latest_version_packages[key].update_src()
 
 
 if (__name__ == "__main__"):
@@ -49,3 +53,8 @@ if (__name__ == "__main__"):
     packages.get_latest_version_packages(xml_path)
 
     packages.print_packages_info()
+
+    # git pull/clone
+    packages.update_projects()
+
+
