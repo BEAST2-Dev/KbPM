@@ -74,7 +74,7 @@ class Packages:
 
 if (__name__ == "__main__"):
     parser = argparse.ArgumentParser()
-    parser.add_argument("wp", help="working path to contain all GitHub respositories (packages)")
+    parser.add_argument("wp", help="working path to contain all GitHub repositories (packages)")
     args = parser.parse_args()
     print("Change working path to :", args.wp)
     os.chdir(args.wp)
