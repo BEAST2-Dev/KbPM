@@ -11,13 +11,20 @@ class Packages:
         self.latest_version_packages = {}
 
     # incrementally add to latest_version_packages
-    def get_latest_version_packages(self, file_path):
+    def get_latest_version_packages(self, file_path, excl_beast2=True):
         from kbpm.Package import Package
         if os.path.exists(file_path):
             tree = parse(file_path)
             root = tree.getroot()
             for package_xml in root.iter('package'):
                 package = Package(package_xml)
+                if excl_beast2 and package.name.lower() == "beast":
+                    print("Exclude core package", package.name, package.version, "from list.")
+                    continue
+                if not package.project_dir or not package.url_source:
+                    print("Warning : remove package", package.name, package.version,
+                          "from list ! project_dir =", package.project_dir, ", url_source =", package.url_source)
+                    continue
                 # add/replace by latest version package
                 if package.name in self.latest_version_packages and not (
                         self.latest_version_packages[package.name] is None):
@@ -34,9 +41,16 @@ class Packages:
             self.latest_version_packages[key].print_info()
         print("\nLoad total ", len(self.latest_version_packages), " unique packages.\n")
 
+    # trig git command
     def update_projects(self):
         for key, value in self.latest_version_packages.items():
             self.latest_version_packages[key].update_src()
+
+    # read all java
+    def find_all_citations(self):
+        for key, value in self.latest_version_packages.items():
+            self.latest_version_packages[key].find_all_java_files()
+
 
 
 if (__name__ == "__main__"):
@@ -55,6 +69,6 @@ if (__name__ == "__main__"):
     packages.print_packages_info()
 
     # git pull/clone
-    packages.update_projects()
+    #packages.update_projects()
 
-
+    packages.find_all_citations()
