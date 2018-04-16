@@ -4,6 +4,7 @@
 from xml.etree.ElementTree import Element
 import os.path
 import glob
+from kbpm.Citations import Citations
 
 
 def git_cmd(cmd=None):
@@ -20,21 +21,24 @@ def git_cmd(cmd=None):
         msg = "Succeed :"
     print(msg, ' '.join([str(a) for a in cmd]))
 
-# grep lines
-def get_citation(java_file):
+
+# grep lines from 1 java to get 1 or many citations
+def get_citations(name, version, java_file):
+    citations = Citations()  # false
     with open(java_file, 'rt') as in_file:
-        is_printing = False
         for line in in_file:
             # print(line)
             # if "@Description" in line:
             if " class " in line or " interface " in line or "enum" in line:
                 break
             if -1 < line.find("@Citation") < 6:
-                print(java_file)
-                is_printing = True
+                citations = Citations(name, version, java_file)
+            # print(java_file)
             # @Citation may have multiple lines
-            if is_printing:
-                print(line)
+            if citations:
+                citations.add_citation_lines(line)
+            # print(line)
+    return citations
 
 
 class Package:
@@ -49,8 +53,8 @@ class Package:
         self.attrs = package_xml.attrib
         self.children = package_xml.findall('depends')
         self.set_package_info(self.attrs)
-        # citation
-        self.java_files = []
+        # suppose to be unique citations only, no java file name
+        self.unique_citations = []
 
     # set package info
     def set_package_info(self, attributes):
@@ -70,7 +74,7 @@ class Package:
             print("Error : package", self.name, self.version, "does not have url !", url)
         elif "github.com" not in items[2] and "bitbucket.org" not in items[2]:
             # [2] is 'github.com' or 'bitbucket.org'
-            print("Error : package", self.name, self.version, "source not in github.com or bitbucket.org !", items[2])
+            print("Warning : package", self.name, self.version, "source not in github.com or bitbucket.org !", items[2])
         else:
             # [4] is project name in github or bitbucket
             self.project_dir = items[4]
@@ -102,20 +106,30 @@ class Package:
                 git_cmd(['git', 'clone', self.url_source])
 
     ### citations ###
-
-    def find_all_java_files(self):
+    # recursively search *.java,
+    # is_print_cite=True to print java file name + citations
+    def find_all_java_files(self, is_print_cite=True):
         cwd = os.getcwd()
         if os.path.exists(self.project_dir):
             proj_cwd = os.path.join(cwd, self.project_dir)
             os.chdir(proj_cwd)
 
-            self.java_files = glob.glob('**/*.java', recursive=True)
-            if len(self.java_files) < 1:
-                print("Cannot find java file in", self.project_dir, "!")
+            java_files = glob.glob('**/*.java', recursive=True)
+            if len(java_files) < 1:
+                print("Error: cannot find java file in", self.project_dir, "!")
             else:
-                print("Find", len(self.java_files), "java files in", self.project_dir, ":\n")
-                for java_file in self.java_files:
-                    get_citation(java_file)
+                print("Find", len(java_files), "java files in", self.project_dir, ":\n")
+                for java_file in java_files:
+                    citations = get_citations(self.name, self.version, java_file)
+                    if citations:
+                        if is_print_cite:
+                            print(citations)
+                        str_cite_only = citations.get_citations()
+                        if "Citation(\"\")" in str_cite_only:
+                            print("Warning: skip empty @Citation in", java_file, ":", str_cite_only)
+                            continue
+                        if str_cite_only not in self.unique_citations:
+                            self.unique_citations.append(str_cite_only)
 
             os.chdir(cwd)
         else:

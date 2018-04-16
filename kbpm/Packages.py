@@ -21,6 +21,13 @@ class Packages:
                 if excl_beast2 and package.name.lower() == "beast":
                     print("Exclude core package", package.name, package.version, "from list.")
                     continue
+                # no source url, manually copy src.jar from BEAUti lib path
+                if package.name.upper() == "DENIM" or package.name.upper() == "STACEY":
+                    package.project_dir = package.name.upper()
+                    # denim.src.jar, stacey.src.jar
+                    package.url_source = package.name.lower() + ".src.jar"
+                    print("Add", package.name, package.version, "from", package.url_source)
+                # validate project_dir or url_source
                 if not package.project_dir or not package.url_source:
                     print("Warning : remove package", package.name, package.version,
                           "from list ! project_dir =", package.project_dir, ", url_source =", package.url_source)
@@ -48,8 +55,20 @@ class Packages:
 
     # read all java
     def find_all_citations(self):
+        print("\n****** Java @Citation ******\n")
         for key, value in self.latest_version_packages.items():
             self.latest_version_packages[key].find_all_java_files()
+
+    def print_all_citations(self):
+        print("\n****** Summary ******\n")
+        total = 0
+        for key, value in self.latest_version_packages.items():
+            package = self.latest_version_packages[key]
+            # not accurate, may have 2 citations in one @Citation
+            for str_citations in package.unique_citations:
+                print(str_citations)
+            total += len(package.unique_citations)
+        print("\nFind total ", total, " citations.\n")
 
 
 
@@ -72,3 +91,5 @@ if (__name__ == "__main__"):
     #packages.update_projects()
 
     packages.find_all_citations()
+    packages.print_all_citations()
+
