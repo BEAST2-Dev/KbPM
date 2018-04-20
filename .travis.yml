@@ -15,7 +15,9 @@ jobs:
   - stage: test
     jdk: oraclejdk8
     
-    script: 
+    script:
+    - pwd
+    - ls . 
     - ls $HOME/.beast     
     - java -cp beast.jar beast.util.PackageManager -updatenow SSM -dir "$HOME/.beast/"
     - ls $HOME/.beast
@@ -23,11 +25,11 @@ jobs:
     - jar xf $HOME/.beast/SSM/*.src.jar
 
 
-  - stage: deploy
-    jdk: oraclejdk8
-    script:
-    - "./continuous-deployment/before-deploy.sh"
-    - "./continuous-deployment/deploy.sh"
-    - "./continuous-deployment/upload-api-docs.sh"
-    on:
-      repo: walterxie/beast2-site
+#  - stage: deploy
+#    jdk: oraclejdk8
+#    script:
+#    - "./continuous-deployment/before-deploy.sh"
+#    - "./continuous-deployment/deploy.sh"
+#    - "./continuous-deployment/upload-api-docs.sh"
+#    on:
+#      repo: walterxie/beast2-site
