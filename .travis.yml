@@ -8,9 +8,10 @@ before_cache:
   - rm -rf $HOME/.beast/*
 
 before_install:
-    - wget https://github.com/CompEvol/beast2/releases/download/v2.4.8/BEAST.v2.4.8.addon.zip
-    - unzip *.zip 
-    - BEAST_LIB="./lib"       
+    - wget https://github.com/CompEvol/beast2/releases/download/v2.5.0/BEAST.v2.5.0.Linux.tgz
+    - tar zxvf *.tgz 
+    - BEAST_LIB="./lib"
+    - ls "$BEAST_LIB"      
 
 jobs:
   include:
