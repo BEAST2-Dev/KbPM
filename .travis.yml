@@ -8,9 +8,9 @@ before_cache:
   - rm -rf $HOME/.beast/*
 
 before_install:
-    - mkdir BEAST
-    - wget -P BEAST https://github.com/CompEvol/beast2/releases/download/v2.4.8/BEAST.v2.4.8.addon.zip
-    - unzip BEAST/*.zip        
+    - wget https://github.com/CompEvol/beast2/releases/download/v2.4.8/BEAST.v2.4.8.addon.zip
+    - unzip *.zip 
+    - BEAST_LIB="./lib"       
 
 jobs:
   include:
@@ -21,7 +21,7 @@ jobs:
     - pwd
     - ls . 
     - ls $HOME/.beast     
-    - java -cp beast.jar beast.util.PackageManager -updatenow SSM -dir "$HOME/.beast/"
+    - java -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/beast.jar" beast.util.PackageManager -updatenow SSM -dir "$HOME/.beast/"
     - ls $HOME/.beast
     after_success:
     - jar xf $HOME/.beast/SSM/*.src.jar
