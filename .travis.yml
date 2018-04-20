@@ -1,0 +1,30 @@
+language: java
+sudo: false
+
+cache:
+  directories:
+  - "$HOME/.beast"
+before_cache:
+  - rm -rf $HOME/.beast/*
+  - wget http://hudson.cs.auckland.ac.nz/job/BEAST2/lastSuccessfulBuild/artifact/build/dist/beast.jar
+
+
+jobs:
+  include:
+  - stage: test
+    jdk: oraclejdk8
+    
+    script:       
+        - java -jar beast.jar PackageManager -updatenow SSM -dir "$HOME/.beast/"
+    after_success:
+        - jar xf $HOME/.beast/SSM/*.src.jar
+
+
+  - stage: deploy
+    jdk: oraclejdk8
+    script:
+        - "./continuous-deployment/before-deploy.sh"
+        - "./continuous-deployment/deploy.sh"
+        - "./continuous-deployment/upload-api-docs.sh"
+    on:
+      repo: walterxie/beast2-site
