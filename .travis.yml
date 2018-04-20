@@ -8,7 +8,9 @@ before_cache:
   - rm -rf $HOME/.beast/*
 
 before_install:
-  - wget http://hudson.cs.auckland.ac.nz/job/BEAST2/lastSuccessfulBuild/artifact/build/dist/beast.jar
+    - mkdir BEAST
+    - wget -P BEAST https://github.com/CompEvol/beast2/releases/download/v2.4.8/BEAST.v2.4.8.addon.zip
+    - unzip BEAST/*.zip        
 
 jobs:
   include:
