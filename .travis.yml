@@ -10,7 +10,7 @@ before_cache:
 before_install:
     - wget https://github.com/CompEvol/beast2/releases/download/v2.5.0/BEAST.v2.5.0.Linux.tgz
     - tar zxvf *.tgz 
-    - BEAST_LIB="./lib"
+    - BEAST_LIB="beast/lib"
     - ls "$BEAST_LIB"      
 
 jobs:
