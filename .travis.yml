@@ -4,8 +4,8 @@ sudo: false
 cache:
   directories:
   - "$HOME/.beast"
-before_cache:
-  - rm -rf $HOME/.beast/*
+#before_cache:
+#  - rm -rf $HOME/.beast/*
 
 before_install:
     - wget https://github.com/CompEvol/beast2/releases/download/v2.5.0/BEAST.v2.5.0.Linux.tgz
@@ -21,11 +21,11 @@ jobs:
     script:
     - pwd
     - ls $HOME/.beast     
-    - java -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/beast.jar" beast.util.PackageManager -add SSM -dir "$HOME/.beast/"
+    - java -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/beast.jar" beast.util.PackageManager -add SSM -dir "$HOME/.beast"
     - ls $HOME/.beast
     after_success:
     - jar xf $HOME/.beast/SSM/*.src.jar
-
+    - find $HOME/.beast/SSM/ -type f 
 
 #  - stage: deploy
 #    jdk: oraclejdk8
