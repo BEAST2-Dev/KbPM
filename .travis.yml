@@ -21,14 +21,14 @@ jobs:
     script:
     - pwd
     - ls $HOME/.beast     
-    - java -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/beast.jar" beast.util.PackageManager -add SSM -dir "$HOME/.beast"
-    - java -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/beast.jar" beast.util.PackageManager -add Mascot -dir "$HOME/.beast"
+    - java -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/beast.jar" beast.util.PackageManager -add SSM -dir "$HOME/.beast" -updatenow
+    - java -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/beast.jar" beast.util.PackageManager -add Mascot -dir "$HOME/.beast" -updatenow
     - ls $HOME/.beast
     after_success:
     - cd $HOME/.beast/SSM
     - jar xf *.src.jar
     - find . -type f 
-    - cd $HOME/.beast/SSM
+    - cd $HOME/.beast/Mascot
     - jar xf *.src.jar
     - find . -type f 
 
