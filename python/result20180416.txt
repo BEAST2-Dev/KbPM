@@ -1,0 +1,730 @@
+~/WorkSpace/KbPM/venv/bin/python ~/WorkSpace/KbPM/kbpm/Packages.py ~/WorkSpace/
+Change working path to : ~/WorkSpace/
+Exclude core package BEAST 2.4.8 from list.
+Warning : package STACEY 1.2.2 source not in github.com or bitbucket.org ! www.indriid.com
+Add STACEY 1.2.2 from stacey.src.jar
+Warning : package STACEY 1.2.3 source not in github.com or bitbucket.org ! indriid.com
+Add STACEY 1.2.3 from stacey.src.jar
+Warning : package STACEY 1.2.4 source not in github.com or bitbucket.org ! indriid.com
+Add STACEY 1.2.4 from stacey.src.jar
+Warning : package DENIM 0.3.0 source not in github.com or bitbucket.org ! indriid.com
+Add DENIM 0.3.0 from denim.src.jar
+Exclude core package BEAST 2.5.0 from list.
+Warning : package STACEY 1.2.4 source not in github.com or bitbucket.org ! indriid.com
+Add STACEY 1.2.4 from stacey.src.jar
+Warning : package DENIM 0.3.0 source not in github.com or bitbucket.org ! indriid.com
+Add DENIM 0.3.0 from denim.src.jar
+*****package*****
+name: BDSKY
+version: 1.3.3
+url: https://github.com/BEAST2-Dev/bdsky/releases/download/1.3.3/BDSKY.addon.1.3.3.zip
+projectURL: https://github.com/BEAST2-Dev/bdsky/
+description: birth death skyline - handles serially sampled tips, piecewise constant rate changes through time and sampled ancestors
+url_source: https://github.com/BEAST2-Dev/bdsky
+project_dir: bdsky
+*****package*****
+name: BEASTLabs
+version: 1.8.0
+url: https://github.com/BEAST2-Dev/BEASTLabs/releases/download/v1.8.0/BEASTlabs.addon.v1.8.0.zip
+projectURL: https://github.com/BEAST2-Dev/BEASTLabs/
+description: BEAST utilities, such as Script, multi monophyletic constraints
+url_source: https://github.com/BEAST2-Dev/BEASTLabs
+project_dir: BEASTLabs
+*****package*****
+name: BEAST_CLASSIC
+version: 1.4.0
+url: https://github.com/BEAST2-Dev/beast-classic/releases/download/v1.4.0/BEAST_CLASSIC.addon.v1.4.0.zip
+projectURL: https://github.com/BEAST2-Dev/beast-classic/
+description: BEAST classes ported from BEAST 1 in wrappers
+url_source: https://github.com/BEAST2-Dev/beast-classic
+project_dir: beast-classic
+*****package*****
+name: GEO_SPHERE
+version: 1.2.0
+url: https://github.com/BEAST2-Dev/beast-geo/releases/download/v1.2.0/GEO_SPHERE.addon.v1.2.0.zip
+projectURL: https://github.com/BEAST2-Dev/beast-geo
+description: Whole world phylogeography
+url_source: https://github.com/BEAST2-Dev/beast-geo
+project_dir: beast-geo
+*****package*****
+name: CA
+version: 1.3.0
+url: https://github.com/BEAST2-Dev/cladeage/releases/download/v1.3.0/CA.addon.v1.3.0.zip
+projectURL: https://github.com/BEAST2-Dev/cladeage/
+description: CladeAge a package for fossil calibrations
+url_source: https://github.com/BEAST2-Dev/cladeage
+project_dir: cladeage
+*****package*****
+name: MASTER
+version: 6.0.0
+url: https://github.com/tgvaughan/MASTER/releases/download/v6.0.0/MASTER.package.v6.0.0.zip
+projectURL: http://tgvaughan.github.io/MASTER
+description: Stochastic population dynamics simulation
+url_source: https://github.com/tgvaughan/MASTER
+project_dir: MASTER
+*****package*****
+name: MultiTypeTree
+version: 7.0.0
+url: https://github.com/tgvaughan/MultiTypeTree/releases/download/v7.0.0/MultiTypeTree.v7.0.0.zip
+projectURL: http://tgvaughan.github.io/MultiTypeTree
+description: Structured coalescent inference
+url_source: https://github.com/tgvaughan/MultiTypeTree
+project_dir: MultiTypeTree
+*****package*****
+name: bacter
+version: 2.0.0
+url: https://github.com/tgvaughan/bacter/releases/download/v2.0.0/bacter.v2.0.0.zip
+projectURL: http://tgvaughan.github.io/bacter
+description: Bacterial ARG inference.
+url_source: https://github.com/tgvaughan/bacter
+project_dir: bacter
+*****package*****
+name: EpiInf
+version: 7.0.0
+url: https://github.com/tgvaughan/epiinf/releases/download/v7.0.0/EpiInf.v7.0.0.zip
+projectURL: http://tgvaughan.github.io/EpiInf
+description: BD/SIR/SIS epidemic trajectory inference.
+url_source: https://github.com/tgvaughan/epiinf
+project_dir: epiinf
+*****package*****
+name: STACEY
+version: 1.2.4
+url: http://indriid.com/2017/STACEY.addon.v1.2.4.zip
+projectURL: http://indriid.com/software.html
+description: Species delimitation and species tree estimation
+url_source: stacey.src.jar
+project_dir: STACEY
+*****package*****
+name: DENIM
+version: 0.3.0
+url: http://indriid.com/2017/DENIM.addon.v0.3.0.zip
+projectURL: http://indriid.com/software.html
+description: Divergence Estimation Notwithstanding ILS and Migration
+url_source: denim.src.jar
+project_dir: DENIM
+*****package*****
+name: MODEL_SELECTION
+version: 1.4.0
+url: https://github.com/BEAST2-Dev/model-selection/releases/download/v1.4.0/MODEL_SELECTION.addon.v1.4.0.zip
+projectURL: https://github.com/BEAST2-Dev/model-selection
+description: Select models through path sampling/stepping stone analysis
+url_source: https://github.com/BEAST2-Dev/model-selection
+project_dir: model-selection
+*****package*****
+name: phylodynamics
+version: 1.2.1
+url: https://github.com/BEAST2-Dev/phylodynamics/releases/download/1.2.0/phylodynamics.addon.1.2.1.zip
+projectURL: https://github.com/BEAST2-Dev/phylodynamics
+description: BDSIR and Stochastic Coalescent
+url_source: https://github.com/BEAST2-Dev/phylodynamics
+project_dir: phylodynamics
+*****package*****
+name: bdmm
+version: 0.2.0
+url: https://github.com/denisekuehnert/bdmm/releases/download/0.2.0/BDMM.addon.0.2.0.zip
+projectURL: https://github.com/denisekuehnert/bdmm
+description: pre-release of multitype birth-death model (aka birth-death-migration model)
+url_source: https://github.com/denisekuehnert/bdmm
+project_dir: bdmm
+*****package*****
+name: RBS
+version: 1.4.0
+url: https://github.com/BEAST2-Dev/rb-beast/releases/download/v1.4.0/RBS.addon.v1.4.0.zip
+projectURL: https://github.com/BEAST2-Dev/rb-beast
+description: Reversible-jump Based substitution model
+url_source: https://github.com/BEAST2-Dev/rb-beast
+project_dir: rb-beast
+*****package*****
+name: SA
+version: 2.0.0
+url: https://github.com/CompEvol/sampled-ancestors/releases/download/2.0.0/SA.v2.0.0.zip
+projectURL: https://github.com/CompEvol/sampled-ancestors
+description: Sampled ancestor trees
+url_source: https://github.com/CompEvol/sampled-ancestors
+project_dir: sampled-ancestors
+*****package*****
+name: SNAPP
+version: 1.4.0
+url: https://github.com/BEAST2-Dev/SNAPP/releases/download/v1.4.0/SNAPP.addon.v1.4.0.zip
+projectURL: http://beast2.org/snapp/
+description: SNP and AFLP Phylogenies
+url_source: https://github.com/BEAST2-Dev/SNAPP
+project_dir: SNAPP
+*****package*****
+name: substBMA
+version: 1.2.2
+url: https://github.com/jessiewu/substBMA/releases/download/v1.2.2/substBMA.v1.2.2.zip
+projectURL: https://github.com/jessiewu/substBMA
+description: Substitution Bayesian Model Averaging
+url_source: https://github.com/jessiewu/substBMA
+project_dir: substBMA
+*****package*****
+name: BEASTShell
+version: 1.4.0
+url: https://github.com/CompEvol/beastshell/releases/download/v1.4.0/BEASTShell.addon.v1.4.0.zip
+projectURL: https://github.com/CompEvol/beastshell
+description: BEAST Shell - BeanShell scripting for BEAST
+url_source: https://github.com/CompEvol/beastshell
+project_dir: beastshell
+*****package*****
+name: MM
+version: 1.1.0
+url: https://github.com/CompEvol/morph-models/releases/download/v1.1.0/MM.addon.v1.1.0.zip
+projectURL: https://github.com/CompEvol/morph-models
+description: Enables models of morphological chatacter evolution
+url_source: https://github.com/CompEvol/morph-models
+project_dir: morph-models
+*****package*****
+name: MGSM
+version: 0.3.0
+url: https://github.com/BEAST2-Dev/MGSM/releases/download/v0.3.0/MGSM.addon.v0.3.0.zip
+projectURL: https://github.com/BEAST2-Dev/MGSM/wiki
+description: Multi-gamma and relaxed gamma site models
+url_source: https://github.com/BEAST2-Dev/MGSM
+project_dir: MGSM
+*****package*****
+name: bModelTest
+version: 1.1.0
+url: https://github.com/BEAST2-Dev/bModelTest/releases/download/v1.1.0/bModelTest.addon.v1.1.0.zip
+projectURL: https://github.com/BEAST2-Dev/bModelTest/wiki
+description: Bayesian model test for nucleotide subst models, gamma rate heterogeneity and invariant sites
+url_source: https://github.com/BEAST2-Dev/bModelTest
+project_dir: bModelTest
+*****package*****
+name: BASTA
+version: 2.3.2
+url: https://bitbucket.org/nicofmay/basta-bayesian-structured-coalescent-approximation/raw/ed062e5d7db2faaeecaeaaf0bd4eb76a378caf4b/dist/BASTA.v2.3.2.zip
+projectURL: https://bitbucket.org/nicofmay/basta-bayesian-structured-coalescent-approximation
+description: Bayesian structured coalescent approximation
+url_source: https://bitbucket.org/nicofmay/basta-bayesian-structured-coalescent-approximation
+project_dir: basta-bayesian-structured-coalescent-approximation
+*****package*****
+name: SCOTTI
+version: 1.1.1
+url: https://bitbucket.org/nicofmay/scotti/raw/ff2795b60a7bbea7edb1b06aaaf78613fc17ab99/SCOTTI/dist/SCOTTI.v1.1.1.zip
+projectURL: https://bitbucket.org/nicofmay/scotti
+description: Structured COalescent Transmission Tree Inference
+url_source: https://bitbucket.org/nicofmay/scotti
+project_dir: scotti
+*****package*****
+name: PoMo
+version: 1.0.0
+url: https://bitbucket.org/nicofmay/pomo-beast/raw/cac21afdabbeb36d1b7e604d2e32db9ed81116a9/dist/PoMo.v1.0.0.zip
+projectURL: https://bitbucket.org/nicofmay/pomo-beast
+description: PoMo, a substitution model that separates mutation and drift processes
+url_source: https://bitbucket.org/nicofmay/pomo-beast
+project_dir: pomo-beast
+*****package*****
+name: SpeciesNetwork
+version: 0.12.2
+url: https://github.com/zhangchicool/speciesnetwork/releases/download/v0.12.2/SpeciesNetwork.zip
+projectURL: https://github.com/zhangchicool/speciesnetwork
+description: Multispecies network coalescent (MSNC) inference of introgression and hybridization
+url_source: https://github.com/zhangchicool/speciesnetwork
+project_dir: speciesnetwork
+*****package*****
+name: StarBEAST2
+version: 0.14.1
+url: https://github.com/genomescale/starbeast2/releases/download/v0.14.1/StarBEAST2.zip
+projectURL: https://github.com/genomescale/starbeast2
+description: Multispecies coalescent inference using multi-locus and fossil data
+url_source: https://github.com/genomescale/starbeast2
+project_dir: starbeast2
+*****package*****
+name: BEASTvntr
+version: 0.1.2
+url: https://github.com/rbouckaert/BEASTvntr/releases/download/v0.1.2/BEASTvntr.addon.v0.1.2.zip
+projectURL: https://github.com/arjun-1/BEASTvntr
+description: Variable Number of Tandem Repeat data, such as microsattelites
+url_source: https://github.com/rbouckaert/BEASTvntr
+project_dir: BEASTvntr
+*****package*****
+name: SSM
+version: 1.1.0
+url: https://github.com/BEAST2-Dev/substmodels/releases/download/v1.1.0/SSM.v1.1.0.zip
+projectURL: https://github.com/BEAST2-Dev/substmodels/
+description: Standard Nucleotide Substitution Models
+url_source: https://github.com/BEAST2-Dev/substmodels
+project_dir: substmodels
+*****package*****
+name: Mascot
+version: 0.0.5
+url: https://github.com/nicfel/Mascot/releases/download/v0.0.5/Mascot.v0.0.5.zip
+projectURL: https://github.com/nicfel/Mascot-Tutorial
+description: Marginal approximation of the structured coalescent
+url_source: https://github.com/nicfel/Mascot
+project_dir: Mascot
+*****package*****
+name: PhyDyn
+version: 1.1.0
+url: https://github.com/mrc-ide/PhyDyn/releases/download/v1.1.0/PhyDyn.v1.1.0.zip
+projectURL: https://github.com/mrc-ide/PhyDyn
+description: PhyDyn: Epidemiological modelling with BEAST
+url_source: https://github.com/mrc-ide/PhyDyn
+project_dir: PhyDyn
+*****package*****
+name: BREAK_AWAY
+version: 1.0.0
+url: https://github.com/rbouckaert/break-away/releases/download/v1.0.0/BREAK_AWAY.addon.v1.0.0.zip
+projectURL: https://github.com/rbouckaert/break-away
+description: break-away model of phylogegraphy
+url_source: https://github.com/rbouckaert/break-away
+project_dir: break-away
+*****package*****
+name: CodonSubstModels
+version: 1.1.0
+url: https://github.com/BEAST2-Dev/codonsubstmodels/releases/download/v1.1.0/CodonSubstModels.v1.1.0.zip
+projectURL: https://github.com/BEAST2-Dev/codonsubstmodels/
+description: Codon substitution models
+url_source: https://github.com/BEAST2-Dev/codonsubstmodels
+project_dir: codonsubstmodels
+
+Load total  33  unique packages.
+
+
+****** Java @Citation ******
+
+Find 21 java files in bdsky :
+
+src/bdsky/ParameterizedBirthDeathSkylineModel.java
+@Citation("Stadler, T., Kuehnert, D., Bonhoeffer, S., and Drummond, A. J. (2013):\n Birth-death skyline " +
+        "plot reveals temporal changes of\n epidemic spread in HIV and hepatitis C virus (HCV). PNAS 110(1): 228–33.\n" +
+        "If sampled ancestors are used then please also cite: Gavryushkina A, Welch D, Stadler T, Drummond AJ (2014) \n" +
+        "Bayesian inference of sampled ancestor trees for epidemiology and fossil calibration. \n" +
+        "PLoS Comput Biol 10(12): e1003919. doi:10.1371/journal.pcbi.1003919")
+
+src/beast/evolution/speciation/BirthDeathSkylineDiversifiedSampling.java
+@Citation("Zhang C., Stadler T., Klopfstein S., Heath T.A., Ronquist F. 2016. Total-evidence dating under the fossilized " +
+        "birth-death process. Syst. Biol. 65:228–249.\nSee also: Stadler T., Smrckova J. 2016. Estimating shifts in " +
+        "diversification rates based on higher-level phylogenies. Biol. Lett. 12:20160273.")
+
+src/beast/evolution/speciation/BirthDeathSkylineModel.java
+@Citation("Stadler, T., Kuehnert, D., Bonhoeffer, S., and Drummond, A. J. (2013):\n Birth-death skyline " +
+        "plot reveals temporal changes of\n epidemic spread in HIV and hepatitis C virus (HCV). PNAS 110(1): 228–33.\n" +
+        "If sampled ancestors are used then please also cite: Gavryushkina A, Welch D, Stadler T, Drummond AJ (2014) \n" +
+        "Bayesian inference of sampled ancestor trees for epidemiology and fossil calibration. \n" +
+        "PLoS Comput Biol 10(12): e1003919. doi:10.1371/journal.pcbi.1003919")
+
+Find 140 java files in BEASTLabs :
+
+src/beast/core/MCMC2.java
+@Citation("A prototype for BEAST 2.0: The computational science of evolutionary software. Bouckaert, Drummond, Rambaut, Alekseyenko, Suchard & the BEAST Core Development Team. 2010")
+
+src/beast/util/LogAnalyserAdv.java
+@Citation(value= "HA Ogilvie, J Heled, D Xie, AJ Drummond, " +
+        "Computational performance and statistical accuracy of *BEAST and comparisons with other methods, " +
+        "Systematic Biology, 2016")
+
+Find 66 java files in beast-classic :
+
+src/beast/evolution/substitutionmodel/LG.java
+@Citation("Le, S. Q. and O. Gascuel. 2008. Mol. Biol. Evol. 25(7):1307-1320.")
+
+src/beast/evolution/tree/coalescent/GMRFSkyrideLikelihood.java
+@Citation("Minin, Bloomquist and Suchard (2008) Molecular Biology and Evolution, 25, 1459-1471")
+
+Find 72 java files in beast-geo :
+
+src/sphericalGeo/ApproxMultivariateTraitLikelihood.java
+@Citation(value="Remco R. Bouckaert. Phylogeography by diffusion on a sphere: whole world phylogeography. 2016, PeerJ 4:e2406 https://doi.org/10.7717/peerj.2406", DOI="10.7717/peerj.2406", year=2016)
+
+src/sphericalGeo/ApproxMultivariateTraitLikelihood2.java
+@Citation(value="Remco R. Bouckaert. Phylogeography by diffusion on a sphere: whole world phylogeography. 2016, PeerJ 4:e2406 https://doi.org/10.7717/peerj.2406", DOI="10.7717/peerj.2406", year=2016)
+
+src/sphericalGeo/ApproxMultivariateTraitLikelihoodF.java
+@Citation(value="Remco R. Bouckaert. Phylogeography by diffusion on a sphere: whole world phylogeography. 2016, PeerJ 4:e2406 https://doi.org/10.7717/peerj.2406", DOI="10.7717/peerj.2406", year=2016)
+
+src/sphericalGeo/ApproxMultivariateTraitLikelihoodF2.java
+@Citation(value="Remco R. Bouckaert. Phylogeography by diffusion on a sphere: whole world phylogeography. 2016, PeerJ 4:e2406 https://doi.org/10.7717/peerj.2406", DOI="10.7717/peerj.2406", year=2016)
+
+Find 15 java files in cladeage :
+
+src/beast/math/distributions/FossilPrior.java
+@Citation("Michael Matschiner and Remco Bouckaert. A rough guide to CladeAge, 2013")
+
+Find 86 java files in MASTER :
+
+src/master/BeastTreeFromMaster.java
+@Citation("Tim Vaughan and Alexei Drummond, 'A Stochastic Simulator of "
+        + "Birth–Death Master Equations with Application to Phylodynamics'. "
+        + "Mol Biol Evol (2013) 30 (6): 1480-1493.")
+
+Find 62 java files in MultiTypeTree :
+
+src/beast/evolution/tree/MultiTypeTree.java
+@Citation("Timothy G. Vaughan, Denise Kuhnert, Alex Popinga, David Welch and \n"
+        + "Alexei J. Drummond, 'Efficient Bayesian inference under the \n"
+        + "structured coalescent', Bioinformatics 30:2272, 2014.")
+
+src/multitypetree/operators/BeerliFelsenstein.java
+@Citation("Beerli and Felsenstein, Genetics 152:763 (1999).")
+
+Find 88 java files in bacter :
+
+src/bacter/ConversionGraph.java
+@Citation("TG Vaughan, D Welch, AJ Drummond, PJ Biggs, T George, NP French\n" +
+        "Inferring Ancestral Recombination Graphs from Bacterial Genomic Data,\n" +
+        "Genetics, 205(2):857 (2017)")
+
+Find 41 java files in epiinf :
+
+src/epiinf/distribs/LeapingSMCTreeDensity.java
+@Citation("Gabriel Leventhal, Timothy Vaughan, David Welch, Alexei Drummond, Tanja Stadler,\n" +
+        "\"Exact phylodynamic inference using particle filtering\", in preparation.")
+
+src/epiinf/distribs/SMCTreeDensity.java
+@Citation("Timothy Vaughan, Gabriel Leventhal, David Welch, Alexei Drummond, Tanja Stadler,\n" +
+        "\"Directly estimating epidemic curves from genomic data\", preprint DOI:10.1101/142570")
+
+Find 20 java files in STACEY :
+
+stacey/BirthDeathCollapseModel.java
+@Citation(value = "Jones GR, Aydin Z, and Oxelman B (2015). " +
+        "DISSECT: an assignment-free Bayesian discovery method for species delimitation under the multispecies coalescent.\n" +
+        "Bioinformatics 31 (7) 991-998. DOI 10.1101/003178\n" +
+        "http://bioinformatics.oxfordjournals.org/content/31/7/991.",
+        firstAuthorSurname = "Jones")
+
+
+
+Find 24 java files in DENIM :
+
+denim/BirthDeathCollapseModel.java
+@Citation(value = "Jones GR, Aydin Z, and Oxelman B (2015). " +
+        "DISSECT: an assignment-free Bayesian discovery method for species delimitation under the multispecies coalescent.\n" +
+        "Bioinformatics 31 (7) 991-998. DOI 10.1101/003178\n" +
+        "http://bioinformatics.oxfordjournals.org/content/31/7/991.",
+        firstAuthorSurname = "Jones")
+
+
+
+denim/CoalescenceMigrationDistribution.java
+@Citation(value = "Graham Jones (2017). " +
+        "Divergence estimation in the presence of ILS and migration.\n" +
+        "http://www.indriid.com",
+        firstAuthorSurname = "Jones")
+
+@Description("Main DENIM class. Calculates coalescence-migration probability.")
+
+Find 34 java files in model-selection :
+
+Find 31 java files in phylodynamics :
+
+src/beast/phylodynamics/BDSIR.java
+@Citation("Simultaneous reconstruction of evolutionary history and epidemiological "
+        + "dynamics from viral sequences with the birth–death SIR model. "
+        + "Denise Kuehnert, Tanja Stadler, Timothy Vaughan, and Alexei Drummond, "
+        + "J. R. Soc. Interface, 11:20131106 (2014). ")
+
+Find 25 java files in bdmm :
+
+src/beast/evolution/speciation/PiecewiseBirthDeathMigrationDistribution.java
+@Citation("Kuehnert D, Stadler T, Vaughan TG, Drummond AJ. 2016. " +
+		"Phylodynamics with migration: \n\t" +
+		"A computational framework to quantify population structure from genomic data. \n\t" +
+		"Mol Biol Evol. 33(8):2102–2116.")
+
+@Description("Piece-wise constant rates are assumed to be ordered by state and time. First k entries of an array give " +
+		"values belonging to type 1, for intervals 1 to k, second k intervals for type 2 etc.")
+
+Find 26 java files in rb-beast :
+
+src/beast/evolution/substitutionmodel/RB.java
+@Citation("Bouckaert, Remco, Monica V. Alvarado-Mora, and J. R. Pinho. Evolutionary rates and HBV: issues of rate estimation with Bayesian molecular methods. Antiviral therapy 18.3 Pt B (2012): 497-503.")
+
+src/beast/evolution/substitutionmodel/VS.java
+@Citation("Alexei J. Drummond and Remco R. Bouckaert. Bayesian evolutionary analysis with BEAST 2. CUP. 2014")
+
+Find 64 java files in sampled-ancestors :
+
+src/beast/evolution/speciation/ParameterizedSABirthDeathModel.java
+@Citation("Gavryushkina A, Welch D, Stadler T, Drummond AJ (2014) \n" +
+        "Bayesian inference of sampled ancestor trees for epidemiology and fossil calibration. \n" +
+        "PLoS Comput Biol 10(12): e1003919. doi:10.1371/journal.pcbi.1003919")
+
+src/beast/evolution/speciation/SABirthDeathModel.java
+@Citation("Gavryushkina A, Welch D, Stadler T, Drummond AJ (2014) \n" +
+        "Bayesian inference of sampled ancestor trees for epidemiology and fossil calibration. \n" +
+        "PLoS Comput Biol 10(12): e1003919. doi:10.1371/journal.pcbi.1003919")
+
+Find 93 java files in SNAPP :
+
+src/snap/likelihood/BetaApproximationLikelihood.java
+@Citation("")
+
+Warning: skip empty @Citation in src/snap/likelihood/BetaApproximationLikelihood.java : @Citation("")
+
+src/snap/likelihood/SnAPTreeLikelihood.java
+@Citation(value="David Bryant, Remco Bouckaert, Joseph Felsenstein, Noah Rosenberg, Arindam RoyChoudhury. Inferring Species Trees Directly from Biallelic Genetic Markers: Bypassing Gene Trees in a Full Coalescent Analysis. Mol. Biol. Evol. 29(8):1917-1932, 2012", 
+	DOI="10.1016/j.ympev.2011.10.01")
+
+src/snap/likelihood/ThresholdTreeLikelihood.java
+@Citation("")
+
+Warning: skip empty @Citation in src/snap/likelihood/ThresholdTreeLikelihood.java : @Citation("")
+
+Find 187 java files in substBMA :
+
+src/beast/evolution/branchratemodel/SynchronizableUCRelaxedClock.java
+@Citation(value = "Drummond AJ, Ho SYW, Phillips MJ, Rambaut A (2006) Relaxed Phylogenetics and Dating with Confidence. PLoS Biol 4(5): e88", DOI = "10.1371/journal.pbio.0040088")
+
+src/beast/evolution/likelihood/NewWVTreeLikelihood.java
+@Citation("Wu C-H, Suchard MA, Drummond AJ (2013) Bayesian Selection of Nucleotide\n" +
+        "Substitution Models and Their Site Assignments. MBE 30(3):669-688.")
+
+Find 267 java files in beastshell :
+
+Find 8 java files in morph-models :
+
+src/beast/evolution/substitutionmodel/LewisMK.java
+@Citation("Lewis, Paul O. A likelihood approach to estimating phylogeny from discrete morphological character data. Systematic biology 50.6 (2001): 913-925.")
+
+Find 5 java files in MGSM :
+
+Find 21 java files in bModelTest :
+
+src/beast/evolution/sitemodel/BEASTModelTestSiteModel.java
+@Citation(value="Remco Bouckaert. bModelTest: Bayesian site model selection for nucleotide data. BioRxiv 2015/06/11/020792", DOI="http://dx.doi.org/10.1101/020792")
+
+Find 32 java files in basta-bayesian-structured-coalescent-approximation :
+
+src/multitypetreeVolz/distributions/StructuredCoalescentTreeDensityVolz.java
+@Citation("New Routes to Phylogeography. De Maio N., Wu C., O'Reilly K., Wilson D. 2015, PLOS Genetics")
+@Description("Likelihood of Coalescent tree (Volz-type) under the Volz approximation to the structured coalescent.")
+
+Find 34 java files in scotti :
+
+SCOTTI/src/multitypetreeVolz/distributions/StructuredCoalescentTreeDensityNew.java
+@Citation("Structured COalescent Transmission Tree Inference (SCOTTI). De Maio N., Wu C., Wilson D., PLOS Computational Biology 2016")
+@Description("Likelihood of Coalescent tree (Volz-type) under the Volz approximation to the structured coalescent, fast version under the assumption that all demes have the same popsize and migration rates.")
+
+Find 17 java files in pomo-beast :
+
+src/beast/evolution/substitutionmodel/PoMoGeneral.java
+@Citation("De Maio, Schloetterer and Kosiol (2013). Linking great apes genome evolution across time scales using polymorphism-aware phylogenetic models. Molecular Biology and Evolution 30(10), 2249-2262. \n\n"+
+" De Maio, Schrempf and Kosiol (2015). PoMo: An Allele Frequency-Based Approach for Species Tree Estimation.  Systematic Biology doi: 10.1093/sysbio/syv048. ")
+
+Find 42 java files in speciesnetwork :
+
+Find 57 java files in starbeast2 :
+
+Find 10 java files in BEASTvntr :
+
+src/beast/evolution/substitutionmodel/Sainudiin.java
+@Citation(value =
+  "Chieh-Hsi Wu and  Alexei J. Drummond. (2011) Joint Inference of\n" +
+  "  Microsatellite Mutation Models, Population History and Genealogies\n" + 
+  "  Using Transdimensional Markov Chain Monte Carlo.\n" + 
+  "  Genetics 188:151-164",
+  DOI= "10.1534/genetics.103.022665", year = 2011, firstAuthorSurname = "wu")
+
+
+src/beast/evolution/substitutionmodel/SainudiinComputedFrequencies.java
+@Citation(value =
+  "Chieh-Hsi Wu and  Alexei J. Drummond. (2011) Joint Inference of\n" +
+  "  Microsatellite Mutation Models, Population History and Genealogies\n" + 
+  "  Using Transdimensional Markov Chain Monte Carlo.\n" + 
+  "  Genetics 188:151-164",
+  DOI= "10.1534/genetics.103.022665", year = 2011, firstAuthorSurname = "wu")
+
+
+src/beast/evolution/substitutionmodel/SainudiinComputedFrequenciesVanilla.java
+@Citation(value =
+  "Chieh-Hsi Wu and  Alexei J. Drummond. (2011) Joint Inference of\n" +
+  "  Microsatellite Mutation Models, Population History and Genealogies\n" + 
+  "  Using Transdimensional Markov Chain Monte Carlo.\n" + 
+  "  Genetics 188:151-164",
+  DOI= "10.1534/genetics.103.022665", year = 2011, firstAuthorSurname = "wu")
+
+
+src/beast/evolution/substitutionmodel/SainudiinVanilla.java
+@Citation(value =
+  "Chieh-Hsi Wu and  Alexei J. Drummond. (2011) Joint Inference of\n" +
+  "  Microsatellite Mutation Models, Population History and Genealogies\n" + 
+  "  Using Transdimensional Markov Chain Monte Carlo.\n" + 
+  "  Genetics 188:151-164",
+  DOI= "10.1534/genetics.103.022665", year = 2011, firstAuthorSurname = "wu")
+
+
+Find 48 java files in substmodels :
+
+Find 26 java files in Mascot :
+
+src/beast/mascot/distribution/Mascot.java
+@Citation("Nicola F. Müller, David A. Rasmussen, Tanja Stadler (2017)\n  The Structured Coalescent and its Approximations.\n  Mol Biol Evol 2017 msx186. doi: 10.1093/molbev/msx186")
+
+src/beast/mascot/distribution/MascotCollaps.java
+@Citation("Nicola F. Müller, David A. Rasmussen, Tanja Stadler (2017)\n  The Structured Coalescent and its Approximations.\n  Mol Biol Evol 2017 msx186. doi: 10.1093/molbev/msx186")
+
+Find 55 java files in PhyDyn :
+
+src/phydyn/distribution/STreeLikelihood.java
+@Citation("Erik M. Volz. 2012. Complex population dynamics and the coalescent under neutrality."
+		+ "Genetics. 2013 Nov;195(3):1199. ")
+
+src/phydyn/distribution/STreeLikelihoodODE.java
+@Citation("Erik M. Volz. 2012. Complex population dynamics and the coalescent under neutrality."
+		+ "Genetics. 2013 Nov;195(3):1199. ")
+
+
+Find 14 java files in break-away :
+
+src/beast/geo/SampledTraitLikelihood.java
+@Citation(value="Remco R. Bouckaert, Claire Bowern, Quentin D. Atkinson. "
+		+ "The origin and expansion of Pama-Nyungan languages across Australia. "
+		+ "Nature Ecology and Evolution (accepted)", year=2017)
+
+Find 12 java files in codonsubstmodels :
+
+src/codonmodels/CodonFrequencies.java
+@Citation(value="Yang, Z. (2006). Computational molecular evolution. Oxford University Press.", year = 2006)
+
+src/codonmodels/M0Model.java
+@Citation(value= "Goldman N, & Yang Z (1994). A codon-based model of nucleotide substitution for\n" +
+        "protein-coding DNA sequences. Molecular biology and evolution 11(5), 725-736.", year = 2014,
+         DOI = "10.1093/oxfordjournals.molbev.a040153")
+@Description("M0 codon substitution model, also called as GY94, published by Goldman and Yang 1994")
+
+
+****** Summary ******
+
+@Citation("Stadler, T., Kuehnert, D., Bonhoeffer, S., and Drummond, A. J. (2013):\n Birth-death skyline " +
+        "plot reveals temporal changes of\n epidemic spread in HIV and hepatitis C virus (HCV). PNAS 110(1): 228–33.\n" +
+        "If sampled ancestors are used then please also cite: Gavryushkina A, Welch D, Stadler T, Drummond AJ (2014) \n" +
+        "Bayesian inference of sampled ancestor trees for epidemiology and fossil calibration. \n" +
+        "PLoS Comput Biol 10(12): e1003919. doi:10.1371/journal.pcbi.1003919")
+
+@Citation("Zhang C., Stadler T., Klopfstein S., Heath T.A., Ronquist F. 2016. Total-evidence dating under the fossilized " +
+        "birth-death process. Syst. Biol. 65:228–249.\nSee also: Stadler T., Smrckova J. 2016. Estimating shifts in " +
+        "diversification rates based on higher-level phylogenies. Biol. Lett. 12:20160273.")
+
+@Citation("A prototype for BEAST 2.0: The computational science of evolutionary software. Bouckaert, Drummond, Rambaut, Alekseyenko, Suchard & the BEAST Core Development Team. 2010")
+
+@Citation(value= "HA Ogilvie, J Heled, D Xie, AJ Drummond, " +
+        "Computational performance and statistical accuracy of *BEAST and comparisons with other methods, " +
+        "Systematic Biology, 2016")
+
+@Citation("Le, S. Q. and O. Gascuel. 2008. Mol. Biol. Evol. 25(7):1307-1320.")
+
+@Citation("Minin, Bloomquist and Suchard (2008) Molecular Biology and Evolution, 25, 1459-1471")
+
+@Citation(value="Remco R. Bouckaert. Phylogeography by diffusion on a sphere: whole world phylogeography. 2016, PeerJ 4:e2406 https://doi.org/10.7717/peerj.2406", DOI="10.7717/peerj.2406", year=2016)
+
+@Citation("Michael Matschiner and Remco Bouckaert. A rough guide to CladeAge, 2013")
+
+@Citation("Tim Vaughan and Alexei Drummond, 'A Stochastic Simulator of "
+        + "Birth–Death Master Equations with Application to Phylodynamics'. "
+        + "Mol Biol Evol (2013) 30 (6): 1480-1493.")
+
+@Citation("Timothy G. Vaughan, Denise Kuhnert, Alex Popinga, David Welch and \n"
+        + "Alexei J. Drummond, 'Efficient Bayesian inference under the \n"
+        + "structured coalescent', Bioinformatics 30:2272, 2014.")
+
+@Citation("Beerli and Felsenstein, Genetics 152:763 (1999).")
+
+@Citation("TG Vaughan, D Welch, AJ Drummond, PJ Biggs, T George, NP French\n" +
+        "Inferring Ancestral Recombination Graphs from Bacterial Genomic Data,\n" +
+        "Genetics, 205(2):857 (2017)")
+
+@Citation("Gabriel Leventhal, Timothy Vaughan, David Welch, Alexei Drummond, Tanja Stadler,\n" +
+        "\"Exact phylodynamic inference using particle filtering\", in preparation.")
+
+@Citation("Timothy Vaughan, Gabriel Leventhal, David Welch, Alexei Drummond, Tanja Stadler,\n" +
+        "\"Directly estimating epidemic curves from genomic data\", preprint DOI:10.1101/142570")
+
+@Citation(value = "Jones GR, Aydin Z, and Oxelman B (2015). " +
+        "DISSECT: an assignment-free Bayesian discovery method for species delimitation under the multispecies coalescent.\n" +
+        "Bioinformatics 31 (7) 991-998. DOI 10.1101/003178\n" +
+        "http://bioinformatics.oxfordjournals.org/content/31/7/991.",
+        firstAuthorSurname = "Jones")
+
+
+
+@Citation(value = "Jones GR, Aydin Z, and Oxelman B (2015). " +
+        "DISSECT: an assignment-free Bayesian discovery method for species delimitation under the multispecies coalescent.\n" +
+        "Bioinformatics 31 (7) 991-998. DOI 10.1101/003178\n" +
+        "http://bioinformatics.oxfordjournals.org/content/31/7/991.",
+        firstAuthorSurname = "Jones")
+
+
+
+@Citation(value = "Graham Jones (2017). " +
+        "Divergence estimation in the presence of ILS and migration.\n" +
+        "http://www.indriid.com",
+        firstAuthorSurname = "Jones")
+
+@Description("Main DENIM class. Calculates coalescence-migration probability.")
+
+@Citation("Simultaneous reconstruction of evolutionary history and epidemiological "
+        + "dynamics from viral sequences with the birth–death SIR model. "
+        + "Denise Kuehnert, Tanja Stadler, Timothy Vaughan, and Alexei Drummond, "
+        + "J. R. Soc. Interface, 11:20131106 (2014). ")
+
+@Citation("Kuehnert D, Stadler T, Vaughan TG, Drummond AJ. 2016. " +
+		"Phylodynamics with migration: \n\t" +
+		"A computational framework to quantify population structure from genomic data. \n\t" +
+		"Mol Biol Evol. 33(8):2102–2116.")
+
+@Description("Piece-wise constant rates are assumed to be ordered by state and time. First k entries of an array give " +
+		"values belonging to type 1, for intervals 1 to k, second k intervals for type 2 etc.")
+
+@Citation("Bouckaert, Remco, Monica V. Alvarado-Mora, and J. R. Pinho. Evolutionary rates and HBV: issues of rate estimation with Bayesian molecular methods. Antiviral therapy 18.3 Pt B (2012): 497-503.")
+
+@Citation("Alexei J. Drummond and Remco R. Bouckaert. Bayesian evolutionary analysis with BEAST 2. CUP. 2014")
+
+@Citation("Gavryushkina A, Welch D, Stadler T, Drummond AJ (2014) \n" +
+        "Bayesian inference of sampled ancestor trees for epidemiology and fossil calibration. \n" +
+        "PLoS Comput Biol 10(12): e1003919. doi:10.1371/journal.pcbi.1003919")
+
+@Citation(value="David Bryant, Remco Bouckaert, Joseph Felsenstein, Noah Rosenberg, Arindam RoyChoudhury. Inferring Species Trees Directly from Biallelic Genetic Markers: Bypassing Gene Trees in a Full Coalescent Analysis. Mol. Biol. Evol. 29(8):1917-1932, 2012", 
+	DOI="10.1016/j.ympev.2011.10.01")
+
+@Citation(value = "Drummond AJ, Ho SYW, Phillips MJ, Rambaut A (2006) Relaxed Phylogenetics and Dating with Confidence. PLoS Biol 4(5): e88", DOI = "10.1371/journal.pbio.0040088")
+
+@Citation("Wu C-H, Suchard MA, Drummond AJ (2013) Bayesian Selection of Nucleotide\n" +
+        "Substitution Models and Their Site Assignments. MBE 30(3):669-688.")
+
+@Citation("Lewis, Paul O. A likelihood approach to estimating phylogeny from discrete morphological character data. Systematic biology 50.6 (2001): 913-925.")
+
+@Citation(value="Remco Bouckaert. bModelTest: Bayesian site model selection for nucleotide data. BioRxiv 2015/06/11/020792", DOI="http://dx.doi.org/10.1101/020792")
+
+@Citation("New Routes to Phylogeography. De Maio N., Wu C., O'Reilly K., Wilson D. 2015, PLOS Genetics")
+@Description("Likelihood of Coalescent tree (Volz-type) under the Volz approximation to the structured coalescent.")
+
+@Citation("Structured COalescent Transmission Tree Inference (SCOTTI). De Maio N., Wu C., Wilson D., PLOS Computational Biology 2016")
+@Description("Likelihood of Coalescent tree (Volz-type) under the Volz approximation to the structured coalescent, fast version under the assumption that all demes have the same popsize and migration rates.")
+
+@Citation("De Maio, Schloetterer and Kosiol (2013). Linking great apes genome evolution across time scales using polymorphism-aware phylogenetic models. Molecular Biology and Evolution 30(10), 2249-2262. \n\n"+
+" De Maio, Schrempf and Kosiol (2015). PoMo: An Allele Frequency-Based Approach for Species Tree Estimation.  Systematic Biology doi: 10.1093/sysbio/syv048. ")
+
+@Citation(value =
+  "Chieh-Hsi Wu and  Alexei J. Drummond. (2011) Joint Inference of\n" +
+  "  Microsatellite Mutation Models, Population History and Genealogies\n" + 
+  "  Using Transdimensional Markov Chain Monte Carlo.\n" + 
+  "  Genetics 188:151-164",
+  DOI= "10.1534/genetics.103.022665", year = 2011, firstAuthorSurname = "wu")
+
+
+@Citation("Nicola F. Müller, David A. Rasmussen, Tanja Stadler (2017)\n  The Structured Coalescent and its Approximations.\n  Mol Biol Evol 2017 msx186. doi: 10.1093/molbev/msx186")
+
+@Citation("Erik M. Volz. 2012. Complex population dynamics and the coalescent under neutrality."
+		+ "Genetics. 2013 Nov;195(3):1199. ")
+
+@Citation("Erik M. Volz. 2012. Complex population dynamics and the coalescent under neutrality."
+		+ "Genetics. 2013 Nov;195(3):1199. ")
+
+
+@Citation(value="Remco R. Bouckaert, Claire Bowern, Quentin D. Atkinson. "
+		+ "The origin and expansion of Pama-Nyungan languages across Australia. "
+		+ "Nature Ecology and Evolution (accepted)", year=2017)
+
+@Citation(value="Yang, Z. (2006). Computational molecular evolution. Oxford University Press.", year = 2006)
+
+@Citation(value= "Goldman N, & Yang Z (1994). A codon-based model of nucleotide substitution for\n" +
+        "protein-coding DNA sequences. Molecular biology and evolution 11(5), 725-736.", year = 2014,
+         DOI = "10.1093/oxfordjournals.molbev.a040153")
+@Description("M0 codon substitution model, also called as GY94, published by Goldman and Yang 1994")
+
+
+Find total  37  citations.
+
