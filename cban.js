@@ -5,7 +5,7 @@ var Connect = new XMLHttpRequest();
 // click button
 Connect.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-	  document.getElementById("load").innerHTML = this.responseText;
+	  document.getElementById("table").innerHTML = this.responseText;
 	}
 };
 // Define which file to open and
