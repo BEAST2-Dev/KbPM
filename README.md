@@ -1,8 +1,12 @@
-# KbPM
-Knowledge-based Package Manager for a start
+# Package Viewer
+The GUI to summarise BEAST 2 packages from [CBAN](https://github.com/CompEvol/CBAN)
 
-## Usage
+## Javascript 
 
+
+## Python analysis 
+
+Usage:
 ```bash
 Packages.py working_dir
 ```
