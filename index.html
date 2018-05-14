@@ -3,7 +3,8 @@
 <head>
     <meta charset='utf-8'></meta>
     <title>Package Viewer</title>
-    <script src='cytoscape/cytoscape.js'></script>    
+    <script type="text/javascript" src='cytoscape/cytoscape.js'></script>
+    <script type="text/javascript" src='cban.js'></script>    
 </head>
 <style>
     #cy {
@@ -14,12 +15,17 @@
         left: 0px;
     }
 </style>
-<body>
+<body onload="javascript:printTable('packages');">
     <h1>Package Viewer</h1>
 
-	<script src='cban.js'></script>
-	
-	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <p>CBAN XML : 
+	<select onchange="printTable('packages');" id="xml">
+	  <option selected="selected">packages2.5.xml</option>
+	  <option>packages.xml</option>
+	</select>
+    </p>
+    
+    <div id="packages"></div>
 
 <!--     <div id='cy'></div> -->
 
