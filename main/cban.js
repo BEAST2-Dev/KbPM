@@ -3,12 +3,15 @@
 // May 2018
 
 // Package obj
-function Package(name, version, projectURL, description, depends){
+function Package(name, version, downloadURL, projectURL, description, depends){
   this.name = name;
   this.version = version;
+  this.downloadURL = downloadURL; // url
   this.projectURL = projectURL;
   this.description = description;
   this.depends = depends;
+  
+  // methods
   this.fullName = function(){
     return this.name + ":" + this.version;
   } 
@@ -47,8 +50,8 @@ function getPackagesFromXML(xml) {
 // 			var depends = pkgs[i].getElementsByTagName("depends");
 			// package Obj
 			var pkg = new Package(pkgs[i].getAttribute("name"), pkgs[i].getAttribute("version"),
-				pkgs[i].getAttribute("projectURL"),pkgs[i].getAttribute("description"),
-				pkgs[i].getElementsByTagName("depends"));
+				pkgs[i].getAttribute("url"),pkgs[i].getAttribute("projectURL"),
+				pkgs[i].getAttribute("description"),pkgs[i].getElementsByTagName("depends"));
 						
 			// Write the data to dict
 			var fullName = pkg.fullName().toLowerCase(); // case-insensitive
@@ -127,7 +130,7 @@ function printTable(divname) {
 		html += "<tr><td>";
 		html += "<a href=\"" + pkgObj.projectURL + "\">" + pkgObj.name + "</a>";
 		html += "</td><td>";
-		html += pkgObj.version;
+		html += "<a href=\"" + pkgObj.downloadURL + "\">" + pkgObj.version + "</a>";
 		html += "</td><td>";
 		html += pkgObj.description;
 		html += "</td><td>";
