@@ -30,7 +30,7 @@ function Package(name, version, projectURL, description, depends){
 } 
 
 // parse packages XML from CBAN
-function getPackagesFromXML(xml, unique) {
+function getPackagesFromXML(xml) {
 	var packagesDict = {};
     
     var conn = new XMLHttpRequest();
@@ -51,7 +51,8 @@ function getPackagesFromXML(xml, unique) {
 				pkgs[i].getElementsByTagName("depends"));
 						
 			// Write the data to dict
-			packagesDict[pkg.fullName()] = pkg;
+			var fullName = pkg.fullName().toLowerCase(); // case-insensitive
+			packagesDict[fullName] = pkg;
 
 		}
 // 		console.log(packagesDict);
@@ -63,13 +64,49 @@ function getPackagesFromXML(xml, unique) {
 	return packagesDict;
 }
 
+function getLatestVersionPackages(packagesDict) {
+    const uniqPackagesDict = {};    
+	for (const [key, pkgObj] of Object.entries(packagesDict)) {
+		var name = pkgObj.name.toLowerCase(); // case-insensitive
+		if (name in uniqPackagesDict) {
+		    var preObj = uniqPackagesDict[name];
+		    if (preObj.version >= pkgObj.version) {continue;}				
+		} 
+		uniqPackagesDict[name] = pkgObj;
+	}
+	return uniqPackagesDict;
+}
+
+// sort by name, but keep BEAST at the first 
+function sortPackages(packagesDict) {
+	const ordered = {};
+	// keep BEAST at the first
+	for (const [key, pkgObj] of Object.entries(packagesDict)) {
+	    var name = pkgObj.name.toLowerCase(); // case-insensitive
+	    if (name == "beast") {
+		   ordered[key] = pkgObj;
+		   break;
+		}
+	}
+	Object.keys(packagesDict).sort().forEach(function(key) {
+	   var name = packagesDict[key].name.toLowerCase(); // case-insensitive
+	   if (name != "beast") 
+		   ordered[key] = packagesDict[key];
+	});
+	return ordered;
+}
 
 // print packages to html
 function printTable(divname) {
 	var xml = document.getElementById("xml").value;
-	var unique = document.getElementById("unique").checked;
+	var latest = document.getElementById("latest").checked;
     // a dict, key is name:version, value is a Package obj
-    var packagesDict = getPackagesFromXML(xml, unique);
+    var packagesDict = getPackagesFromXML(xml);
+    if (latest)
+		packagesDict = getLatestVersionPackages(packagesDict);
+	var sort = true;
+	if (sort)
+	    packagesDict = sortPackages(packagesDict);
         
     var html = "<table border=\"1\">";
 	//header
@@ -100,7 +137,12 @@ function printTable(divname) {
 	}
 	html += '</table>';
 
-	html = "<p>Extract " + num_pkg + " packages from " + xml + "</p>" + html;
+    var msg = "<p>Extract " + num_pkg;
+    if (latest)
+        msg += " unique";
+    msg += " packages from " + xml + "</p>";
+	
+	html = msg + html;
 	
     document.getElementById(divname).innerHTML = html;
 }
