@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'></meta>
-    <title>Package Viewer</title>
+    <title>Package Viewer (used for development)</title>
 <!--     <script type="text/javascript" src='cytoscape/cytoscape.js'></script> -->
     <script type="text/javascript" src='main/cban.js'></script>   
     <!-- "GET /favicon.ico HTTP/1.1" 404 -->
@@ -20,11 +20,12 @@
 </style>
  -->
 <body onload="javascript:printTable('packages');">
-    <h1>Package Viewer</h1>
+    <h1>Package Viewer (used for development)</h1>
     
     <p>CBAN XML : 
 	<select onchange="printTable('packages');" id="xml">
-	  <option selected="selected">packages2.5.xml</option>
+	  <option selected="selected">packages2.6.xml</option>
+	  <option>packages2.5.xml</option>
 	  <option>packages.xml</option>
 	</select>
 	&nbsp;(<input type="radio" name="latest" id="latest" value="true" checked="checked" onclick="printTable('packages');" />latest version&nbsp; 
